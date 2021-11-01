@@ -8,6 +8,9 @@
 	<string></string>
 	<key>UIAppFonts</key>
 	<array>
+		<string>GmarketSansBold.otf</string>
+		<string>GmarketSansLight.otf</string>
+		<string>GmarketSansMedium.otf</string>
 		<string>SCDream2.otf</string>
 		<string>SCDream5.otf</string>
 		<string>SCDream9.otf</string>

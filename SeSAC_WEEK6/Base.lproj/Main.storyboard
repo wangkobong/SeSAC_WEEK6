@@ -184,6 +184,12 @@
                                                 <constraint firstItem="uPk-jJ-yLi" firstAttribute="top" secondItem="Wx9-RZ-6Ug" secondAttribute="bottom" constant="8" id="q6N-PD-oFy"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="contentLabel" destination="Ffg-uV-R3O" id="ayY-YP-Rjh"/>
+                                            <outlet property="dateLabel" destination="uPk-jJ-yLi" id="Kg4-wW-kpy"/>
+                                            <outlet property="summaryImageView" destination="2XW-TG-BWA" id="Hhq-5t-edY"/>
+                                            <outlet property="titleLabel" destination="Wx9-RZ-6Ug" id="4Ib-Tg-5Y0"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

@@ -12,11 +12,11 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         /*
-         ----> S-CoreDream-2ExtraLight
-         ----> S-CoreDream-5Medium
-         ----> S-CoreDream-9Black
+         ----> GmarketSansMedium
+         ----> GmarketSansLight
+         ----> GmarketSansBold
          welcomeLabel.text = LocalizableStrings.welcome_text.localized
          
          //11 ~ 20 폰트사이즈가 적당함
@@ -29,7 +29,7 @@ class MainViewController: UIViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "plus"), style: .plain, target: self, action: #selector(addButtonPressed))
  
         self.title = "HOME"
-
+        self.tabBarController?.tabBar.items![0].title = NSLocalizedString("homeTitle", tableName: "TabBarSetting", bundle: .main, value: "", comment: "")
     }
 
     @objc func addButtonPressed() {

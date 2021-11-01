@@ -29,6 +29,9 @@
 		FE136A582730260D00E46322 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE136A572730260D00E46322 /* AddViewController.swift */; };
 		FE136A5A27302CA100E46322 /* NavItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE136A5927302CA100E46322 /* NavItem+Extension.swift */; };
 		FE136A5C27303C1000E46322 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE136A5B27303C1000E46322 /* SearchTableViewCell.swift */; };
+		FE136A602730431400E46322 /* GmarketSansMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = FE136A5D2730431400E46322 /* GmarketSansMedium.otf */; };
+		FE136A612730431400E46322 /* GmarketSansBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FE136A5E2730431400E46322 /* GmarketSansBold.otf */; };
+		FE136A622730431400E46322 /* GmarketSansLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = FE136A5F2730431400E46322 /* GmarketSansLight.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -63,19 +66,9 @@
 		FE136A23272F7C2600E46322 /* sfsf.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = sfsf.intentdefinition; sourceTree = "<group>"; };
 		FE136A24272F7C2800E46322 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE136A26272F7C2800E46322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FE136A30272F7CA400E46322 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
-		FE136A31272F7CA400E46322 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		FE136A32272F7CE200E46322 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Main.strings; sourceTree = "<group>"; };
-		FE136A33272F7CE200E46322 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		FE136A38272F802100E46322 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		FE136A3B272F804100E46322 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
-		FE136A3C272F804200E46322 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FE136A40272F84E100E46322 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Setting.strings; sourceTree = "<group>"; };
-		FE136A42272F84E300E46322 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Setting.strings; sourceTree = "<group>"; };
-		FE136A43272F84E400E46322 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Setting.strings; sourceTree = "<group>"; };
 		FE136A47272F879900E46322 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FE136A49272F879E00E46322 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FE136A4A272F879E00E46322 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FE136A4B272F88E500E46322 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		FE136A4D272F89FC00E46322 /* LocalizableStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableStrings.swift; sourceTree = "<group>"; };
 		FE136A512730222600E46322 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +77,16 @@
 		FE136A572730260D00E46322 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		FE136A5927302CA100E46322 /* NavItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavItem+Extension.swift"; sourceTree = "<group>"; };
 		FE136A5B27303C1000E46322 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		FE136A5D2730431400E46322 /* GmarketSansMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansMedium.otf; sourceTree = "<group>"; };
+		FE136A5E2730431400E46322 /* GmarketSansBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansBold.otf; sourceTree = "<group>"; };
+		FE136A5F2730431400E46322 /* GmarketSansLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansLight.otf; sourceTree = "<group>"; };
+		FE136A63273048E600E46322 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		FE136A64273048E600E46322 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		FE136A65273048E600E46322 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FE136A66273048E600E46322 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FE136A67273048E600E46322 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Setting.strings; sourceTree = "<group>"; };
+		FE136A6A2730495400E46322 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
+		FE136A6B2730495400E46322 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +144,9 @@
 		FE136A0C272F6F8000E46322 /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				FE136A5E2730431400E46322 /* GmarketSansBold.otf */,
+				FE136A5F2730431400E46322 /* GmarketSansLight.otf */,
+				FE136A5D2730431400E46322 /* GmarketSansMedium.otf */,
 				FE136A0F272F6FE500E46322 /* SCDream2.otf */,
 				FE136A0D272F6FE500E46322 /* SCDream5.otf */,
 				FE136A0E272F6FE500E46322 /* SCDream9.otf */,
@@ -231,8 +237,8 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 				ko,
-				th,
 			);
 			mainGroup = FE1369EC272F6F3800E46322;
 			productRefGroup = FE1369F6272F6F3800E46322 /* Products */;
@@ -249,15 +255,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE136A612730431400E46322 /* GmarketSansBold.otf in Resources */,
 				FE136A12272F6FE500E46322 /* SCDream2.otf in Resources */,
 				FE136A11272F6FE500E46322 /* SCDream9.otf in Resources */,
 				FE136A05272F6F3A00E46322 /* LaunchScreen.storyboard in Resources */,
 				FE136A37272F802100E46322 /* Localizable.strings in Resources */,
 				FE136A02272F6F3A00E46322 /* Assets.xcassets in Resources */,
 				FE136A3F272F84E100E46322 /* Setting.strings in Resources */,
+				FE136A622730431400E46322 /* GmarketSansLight.otf in Resources */,
 				FE136A00272F6F3800E46322 /* Main.storyboard in Resources */,
 				FE136A46272F879900E46322 /* InfoPlist.strings in Resources */,
 				FE136A10272F6FE500E46322 /* SCDream5.otf in Resources */,
+				FE136A602730431400E46322 /* GmarketSansMedium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,8 +300,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				FE1369FF272F6F3800E46322 /* Base */,
-				FE136A30272F7CA400E46322 /* ko */,
-				FE136A32272F7CE200E46322 /* th */,
+				FE136A63273048E600E46322 /* es */,
+				FE136A6A2730495400E46322 /* ko */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -301,8 +310,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				FE136A04272F6F3A00E46322 /* Base */,
-				FE136A31272F7CA400E46322 /* ko */,
-				FE136A33272F7CE200E46322 /* th */,
+				FE136A64273048E600E46322 /* es */,
+				FE136A6B2730495400E46322 /* ko */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -311,8 +320,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				FE136A38272F802100E46322 /* en */,
-				FE136A3B272F804100E46322 /* ko */,
-				FE136A3C272F804200E46322 /* th */,
+				FE136A66273048E600E46322 /* es */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -321,8 +329,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				FE136A40272F84E100E46322 /* en */,
-				FE136A42272F84E300E46322 /* ko */,
-				FE136A43272F84E400E46322 /* th */,
+				FE136A67273048E600E46322 /* es */,
 			);
 			name = Setting.strings;
 			sourceTree = "<group>";
@@ -331,8 +338,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				FE136A47272F879900E46322 /* en */,
-				FE136A49272F879E00E46322 /* ko */,
-				FE136A4A272F879E00E46322 /* th */,
+				FE136A65273048E600E46322 /* es */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

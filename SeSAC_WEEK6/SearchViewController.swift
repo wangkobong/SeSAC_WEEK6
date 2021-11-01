@@ -10,10 +10,23 @@ import UIKit
 class SearchViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var SearchTableView: UITableView!
-    
+    /*
+     ----> GmarketSansMedium
+     ----> GmarketSansLight
+     ----> GmarketSansBold
+     welcomeLabel.text = LocalizableStrings.welcome_text.localized
+     
+     //11 ~ 20 폰트사이즈가 적당함
+     welcomeLabel.font = UIFont().mainBlack
+     
+     //
+     backupLabel.text = LocalizableStrings.data_backup.localizedSetting
+
+     */
     override func viewDidLoad() {
         super.viewDidLoad()
         
+ 
         SearchTableView.delegate = self
         SearchTableView.dataSource = self
         self.title = "검색"

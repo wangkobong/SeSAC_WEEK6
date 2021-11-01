@@ -6,19 +6,19 @@
 "Ffg-uV-R3O.text" = "내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용";
 
 /* Class = "UIViewController"; title = "일기 작성"; ObjectID = "GKP-EC-qF2"; */
-"GKP-EC-qF2.title" = "일기 작성";
+"GKP-EC-qF2.title" = "redacción del diario";
 
 /* Class = "UITabBarItem"; title = "검색"; ObjectID = "MOC-aa-4H4"; */
-"MOC-aa-4H4.title" = "검색";
+"MOC-aa-4H4.title" = "búsqueda";
 
 /* Class = "UITabBarItem"; title = "캘린더"; ObjectID = "OIQ-tf-b56"; */
-"OIQ-tf-b56.title" = "캘린더";
+"OIQ-tf-b56.title" = "calendario";
 
 /* Class = "UIViewController"; title = "CalendarViewController"; ObjectID = "Rbn-7I-4HQ"; */
-"Rbn-7I-4HQ.title" = "CalendarViewController";
+"Rbn-7I-4HQ.title" = "calendario";
 
 /* Class = "UILabel"; text = "제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목"; ObjectID = "Wx9-RZ-6Ug"; */
-"Wx9-RZ-6Ug.text" = "제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목";
+"Wx9-RZ-6Ug.text" = "título";
 
 /* Class = "UIViewController"; title = "SettingViewController"; ObjectID = "Y77-Pd-ww4"; */
 "Y77-Pd-ww4.title" = "SettingViewController";
@@ -27,10 +27,10 @@
 "gRM-wy-QXG.title" = "HOME";
 
 /* Class = "UILabel"; text = "calendar"; ObjectID = "qDR-YY-ApQ"; */
-"qDR-YY-ApQ.text" = "calendar";
+"qDR-YY-ApQ.text" = "calendario";
 
 /* Class = "UILabel"; text = "setting"; ObjectID = "t6P-fZ-EUt"; */
-"t6P-fZ-EUt.text" = "setting";
+"t6P-fZ-EUt.text" = "establecimiento";
 
 /* Class = "UILabel"; text = "2021. 11. 01"; ObjectID = "uPk-jJ-yLi"; */
 "uPk-jJ-yLi.text" = "2021. 11. 01";
@@ -39,7 +39,7 @@
 "vgo-LE-Pnz.text" = "home";
 
 /* Class = "UITextField"; placeholder = "제목을 입력해주세요"; ObjectID = "ycf-x7-mI8"; */
-"ycf-x7-mI8.placeholder" = "제목을 입력해주세요";
+"ycf-x7-mI8.placeholder" = "Por favor, introduzca un título";
 
 /* Class = "UITabBarItem"; title = "설정"; ObjectID = "zT8-Pi-nax"; */
-"zT8-Pi-nax.title" = "설정";
+"zT8-Pi-nax.title" = "establecimiento";
