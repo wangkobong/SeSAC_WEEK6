@@ -28,8 +28,8 @@ class MainViewController: UIViewController {
          */
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "plus"), style: .plain, target: self, action: #selector(addButtonPressed))
  
-        self.title = "HOME"
-        self.tabBarController?.tabBar.items![0].title = NSLocalizedString("homeTitle", tableName: "TabBarSetting", bundle: .main, value: "", comment: "")
+        title = "HOME"
+  
     }
 
     @objc func addButtonPressed() {

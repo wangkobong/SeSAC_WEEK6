@@ -6,10 +6,15 @@
 //
 
 import UIKit
+import RealmSwift
 
 class SearchViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var SearchTableView: UITableView!
+    
+    var tasks: Results<UserDiary>!
+    
+    let localRealm = try! Realm()
     /*
      ----> GmarketSansMedium
      ----> GmarketSansLight
@@ -30,6 +35,14 @@ class SearchViewController: UIViewController, UITableViewDataSource {
         SearchTableView.delegate = self
         SearchTableView.dataSource = self
         self.title = "검색"
+        
+        tasks = localRealm.objects(UserDiary.self)
+        print(tasks)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        SearchTableView.reloadData()
     }
 
 }
@@ -39,7 +52,7 @@ extension SearchViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
-        return 100
+        return tasks.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -47,6 +60,10 @@ extension SearchViewController: UITableViewDelegate {
             return UITableViewCell()
         }
         
+        let row = tasks[indexPath.row]
+        cell.contentLabel.text = row.diaryContent
+        cell.titleLabel.text = row.diaryTitle
+
         return cell
     }
 }

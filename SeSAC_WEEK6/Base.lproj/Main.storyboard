@@ -92,6 +92,10 @@
                             <constraint firstItem="5hO-p3-g7J" firstAttribute="top" secondItem="Sft-J4-1Oh" secondAttribute="bottom" constant="20" id="rJV-op-4Zn"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="contentTextView" destination="5hO-p3-g7J" id="WT0-tt-ghi"/>
+                        <outlet property="titleTextField" destination="ycf-x7-mI8" id="gGn-qM-NpG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CtR-Ps-cM5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
