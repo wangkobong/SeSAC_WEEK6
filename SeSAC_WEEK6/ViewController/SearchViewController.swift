@@ -36,8 +36,8 @@ class SearchViewController: UIViewController, UITableViewDataSource {
         SearchTableView.dataSource = self
         self.title = "검색"
         
-        tasks = localRealm.objects(UserDiary.self).sorted(byKeyPath: "diaryTitle", ascending: false)
-        print(tasks)
+        tasks = localRealm.objects(UserDiary.self) //.filter("favorite == true")  //.sorted(byKeyPath: "diaryTitle", ascending: false)
+
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -35,6 +35,7 @@
 		FE136A742730C95300E46322 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = FE136A732730C95300E46322 /* Realm */; };
 		FE136A762730C95300E46322 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FE136A752730C95300E46322 /* RealmSwift */; };
 		FE136A792730C97900E46322 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE136A782730C97900E46322 /* RealmModel.swift */; };
+		FE136AAF27336DBC00E46322 /* Zip in Frameworks */ = {isa = PBXBuildFile; productRef = FE136AAE27336DBC00E46322 /* Zip */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -98,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE136AAF27336DBC00E46322 /* Zip in Frameworks */,
 				FE136A762730C95300E46322 /* RealmSwift in Frameworks */,
 				FE136A742730C95300E46322 /* Realm in Frameworks */,
 			);
@@ -237,6 +239,7 @@
 			packageProductDependencies = (
 				FE136A732730C95300E46322 /* Realm */,
 				FE136A752730C95300E46322 /* RealmSwift */,
+				FE136AAE27336DBC00E46322 /* Zip */,
 			);
 			productName = SeSAC_WEEK6;
 			productReference = FE1369F5272F6F3800E46322 /* SeSAC_WEEK6.app */;
@@ -270,6 +273,7 @@
 			mainGroup = FE1369EC272F6F3800E46322;
 			packageReferences = (
 				FE136A722730C95300E46322 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				FE136AAD27336DBC00E46322 /* XCRemoteSwiftPackageReference "Zip" */,
 			);
 			productRefGroup = FE1369F6272F6F3800E46322 /* Products */;
 			projectDirPath = "";
@@ -585,6 +589,14 @@
 				version = 10.18.0;
 			};
 		};
+		FE136AAD27336DBC00E46322 /* XCRemoteSwiftPackageReference "Zip" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marmelroy/Zip";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -597,6 +609,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FE136A722730C95300E46322 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
 			productName = RealmSwift;
+		};
+		FE136AAE27336DBC00E46322 /* Zip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FE136AAD27336DBC00E46322 /* XCRemoteSwiftPackageReference "Zip" */;
+			productName = Zip;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

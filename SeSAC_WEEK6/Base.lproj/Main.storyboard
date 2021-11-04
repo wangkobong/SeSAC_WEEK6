@@ -107,6 +107,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="qWQ-Rd-MN0" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Hs3-hG-A1H">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -114,7 +115,7 @@
                         <segue destination="g7n-6P-cAc" kind="relationship" relationship="viewControllers" id="1m2-O3-Nyl"/>
                         <segue destination="EDq-Tj-RnE" kind="relationship" relationship="viewControllers" id="TWJ-eI-CNq"/>
                         <segue destination="Rbn-7I-4HQ" kind="relationship" relationship="viewControllers" id="yNy-0F-2lD"/>
-                        <segue destination="Y77-Pd-ww4" kind="relationship" relationship="viewControllers" id="MhK-7q-B7I"/>
+                        <segue destination="cfJ-5d-js3" kind="relationship" relationship="viewControllers" id="MhK-7q-B7I"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MsT-3o-cYz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -256,15 +257,42 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5z1-Rw-mj1">
+                                <rect key="frame" x="20" y="88" width="374" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="백업하기"/>
+                                <connections>
+                                    <action selector="backupButtonClicked:" destination="Y77-Pd-ww4" eventType="touchUpInside" id="fuC-KY-NaO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIR-WL-8DB">
+                                <rect key="frame" x="20" y="158" width="374" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ActivityViewController"/>
+                                <connections>
+                                    <action selector="ActivityViewControllerButtonClicked:" destination="Y77-Pd-ww4" eventType="touchUpInside" id="x9Y-CY-heg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Vf-l4-UPs">
+                                <rect key="frame" x="20" y="223" width="374" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="복구하기"/>
+                                <connections>
+                                    <action selector="restoreButtonClicked:" destination="Y77-Pd-ww4" eventType="touchUpInside" id="dbd-nt-0bl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="w52-97-a4D"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="설정" image="person.circle" catalog="system" id="zT8-Pi-nax"/>
+                    <navigationItem key="navigationItem" id="Icb-QI-hox"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UeI-Wx-nlS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="977" y="1718"/>
+            <point key="canvasLocation" x="1886.9565217391305" y="1717.6339285714284"/>
         </scene>
         <!--HOME-->
         <scene sceneID="AZk-BD-fyb">
@@ -303,6 +331,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SXv-Sp-MCs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="969.56521739130437" y="396.42857142857139"/>
+        </scene>
+        <!--설정-->
+        <scene sceneID="j8z-xc-ZuG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cfJ-5d-js3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="설정" image="person.circle" catalog="system" id="zT8-Pi-nax"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DwU-R5-SH3">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y77-Pd-ww4" kind="relationship" relationship="rootViewController" id="yxh-SK-Z6P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u05-2C-9Iv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="976.81159420289862" y="1717.6339285714284"/>
         </scene>
     </scenes>
     <resources>
