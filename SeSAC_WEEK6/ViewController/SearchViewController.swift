@@ -102,7 +102,9 @@ extension SearchViewController: UITableViewDelegate {
         let row = tasks[indexPath.row]
         cell.contentLabel.text = row.diaryContent
         cell.titleLabel.text = row.diaryTitle
-
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM월-dd일"
+        cell.dateLabel.text = dateFormatter.string(from: row.registerDate)
         
         cell.summaryImageView.image = lodaImageFromDocumentDirectory(imageName: "\(row._id).png")
         return cell
