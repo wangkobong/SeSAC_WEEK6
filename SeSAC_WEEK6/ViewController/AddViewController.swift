@@ -13,7 +13,6 @@ class AddViewController: UIViewController, UITextFieldDelegate, UITextViewDelega
     static let identifier = "AddViewController"
     
     let localRealm = try! Realm()
-    let datePicker = UIDatePicker()
     let imagepickerController = UIImagePickerController()
     var fCurTextfieldBottom: CGFloat = 0.0
     let alertController = UIAlertController(title: "올릴 방식을 선택하세요", message: "사진찍기 또는 앨범에서 선택", preferredStyle: .actionSheet)
@@ -21,18 +20,16 @@ class AddViewController: UIViewController, UITextFieldDelegate, UITextViewDelega
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var contentTextView: UITextView!
     @IBOutlet weak var contentImageView: UIImageView!
-    @IBOutlet weak var regDateTextField: UITextField!
+    @IBOutlet weak var dateButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         titleTextField.delegate = self
-        regDateTextField.delegate = self
         contentTextView.delegate = self
         self.imagepickerController.delegate = self
         
         titleTextField.returnKeyType = .done
-        regDateTextField.returnKeyType = .done
         contentTextView.returnKeyType = .done
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
@@ -54,8 +51,16 @@ class AddViewController: UIViewController, UITextFieldDelegate, UITextViewDelega
     }
     
     @objc func saveButtonPressed() {
+        let buttonDate = dateButton.currentTitle!
+        let format = DateFormatter()
+        format.dateFormat = "yyyy년 MM월 dd일"
+//        let date = dateButton.currentTitle!
+//        let value = format.date(from: buttonDate)
+//
+        // let value = DateFormatter.customFormat.date(from: date)
+        guard let date = dateButton.currentTitle, let value = format.date(from: date) else { return }
         
-        let task = UserDiary(diaryTitle: titleTextField.text!, diaryContent: contentTextView.text!, writeDate: Date(), registerDate: Date())
+        let task = UserDiary(diaryTitle: titleTextField.text!, diaryContent: contentTextView.text!, writeDate: value, registerDate: Date())
         try! localRealm.write {
             localRealm.add(task)
             saveImageToDocumentDirectory(imageName: "\(task._id).png", image: contentImageView.image!)
@@ -63,6 +68,37 @@ class AddViewController: UIViewController, UITextFieldDelegate, UITextViewDelega
         self.dismiss(animated: true, completion: nil)
         
     }
+    
+    @IBAction func dateButtonClicked(_ sender: UIButton) {
+        let alert = UIAlertController(title: "날짜 선택", message: "날짜를 선택해주세요", preferredStyle: .alert)
+        
+        // 스토리보드 씬 + 클래스 -> 화면 전환 코드
+//        let contentView = DatePickerViewController()
+        guard let contentView = self.storyboard?.instantiateViewController(withIdentifier: "DatePickerViewController") as? DatePickerViewController else {
+            
+            print("DatePickerViewController에 오류가 있음")
+            return
+        }
+        contentView.view.backgroundColor = .green
+//        contentView.preferredContentSize = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+        contentView.preferredContentSize.height = 200
+        alert.setValue(contentView, forKey: "contentViewController")
+        let cancel = UIAlertAction(title: "취소", style: .cancel, handler: nil)
+        let ok = UIAlertAction(title: "확인", style: .default) { _ in
+            
+            let format = DateFormatter()
+            format.dateFormat = "yyyy년 MM월 dd일"
+            let value = format.string(from: contentView.datePicker.date)
+            
+            //확인 버튼 눌렀을 때 버튼의 타이틀 변경
+            self.dateButton.setTitle(value, for: .normal)
+        }
+        
+        alert.addAction(cancel)
+        alert.addAction(ok)
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
          textField.resignFirstResponder()
          return true
@@ -96,35 +132,7 @@ class AddViewController: UIViewController, UITextFieldDelegate, UITextViewDelega
             self.view.frame.origin.y = 0
         }
     }
-    
-    func createDatePickerView(){
-        //toolbar 만들기, done 버튼이 들어갈 곳
-        let toolbar = UIToolbar()
-        toolbar.sizeToFit() //view 스크린에 딱 맞게 사이즈 조정
-        
-        //버튼 만들기
-        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target : nil, action: #selector(donePressed))
-        //action 자리에는 이후에 실행될 함수가 들어간다?
-        
-        //버튼 툴바에 할당
-        toolbar.setItems([doneButton], animated: true)
-        
-        //toolbar를 키보드 대신 할당?
-        regDateTextField.inputAccessoryView = toolbar
-        
-        //assign datepicker to the textfield, 텍스트 필드에 datepicker 할당
-        regDateTextField.inputView = datePicker
-        
-        //datePicker 형식 바꾸기
-        datePicker.datePickerMode = .date
-    }
-    @objc func donePressed(){
-        //formatter
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy년 MM월 dd일"
-        regDateTextField.text = formatter.string(from: datePicker.date)
-        self.view.endEditing(true)
-    }
+
     
     func saveImageToDocumentDirectory(imageName: String, image: UIImage) {
         
