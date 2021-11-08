@@ -7,9 +7,9 @@
 
 import Foundation
 
-extension DateFormatter {
-    static var customFormat: DateFormatter {
-        let date = DateFormatter()
-        date.dateFormat = "yyyy년 MM월 dd일"
-    }
-}
+//extension DateFormatter {
+//    static var customFormat: DateFormatter {
+//        let date = DateFormatter()
+//        date.dateFormat = "yyyy년 MM월 dd일"
+//    }
+//}

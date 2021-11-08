@@ -16,6 +16,16 @@ class SearchTableViewCell: UITableViewCell {
     @IBOutlet weak var contentLabel: UILabel!
     @IBOutlet weak var summaryImageView: UIImageView!
     
+    func configureCell(row: UserDiary) {
+
+        contentLabel.text = row.diaryContent
+        titleLabel.text = row.diaryTitle
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM월-dd일"
+        
+        dateLabel.text = dateFormatter.string(from: row.writeDate)
+        
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

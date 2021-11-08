@@ -40,6 +40,8 @@
 		FEBA91772734B52600A71679 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBA91762734B52600A71679 /* DatePickerViewController.swift */; };
 		FEBA91792734CE7200A71679 /* RealmQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBA91782734CE7200A71679 /* RealmQuery.swift */; };
 		FEBA917B2734D01A00A71679 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBA917A2734D01A00A71679 /* Date+Extension.swift */; };
+		FEBA919F2738AAA500A71679 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBA919E2738AAA500A71679 /* HomeTableViewCell.swift */; };
+		FEBA91A12738AD4A00A71679 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBA91A02738AD4A00A71679 /* HomeCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -99,6 +101,8 @@
 		FEBA91762734B52600A71679 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		FEBA91782734CE7200A71679 /* RealmQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmQuery.swift; sourceTree = "<group>"; };
 		FEBA917A2734D01A00A71679 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		FEBA919E2738AAA500A71679 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		FEBA91A02738AD4A00A71679 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,8 @@
 				FE136A01272F6F3A00E46322 /* Assets.xcassets */,
 				FE136A03272F6F3A00E46322 /* LaunchScreen.storyboard */,
 				FE136A06272F6F3A00E46322 /* Info.plist */,
+				FEBA919E2738AAA500A71679 /* HomeTableViewCell.swift */,
+				FEBA91A02738AD4A00A71679 /* HomeCollectionViewCell.swift */,
 			);
 			path = SeSAC_WEEK6;
 			sourceTree = "<group>";
@@ -327,8 +333,10 @@
 				FE1369FD272F6F3800E46322 /* MainViewController.swift in Sources */,
 				FE136A792730C97900E46322 /* RealmModel.swift in Sources */,
 				FEBA91792734CE7200A71679 /* RealmQuery.swift in Sources */,
+				FEBA91A12738AD4A00A71679 /* HomeCollectionViewCell.swift in Sources */,
 				FE1369F9272F6F3800E46322 /* AppDelegate.swift in Sources */,
 				FE136A522730222600E46322 /* SearchViewController.swift in Sources */,
+				FEBA919F2738AAA500A71679 /* HomeTableViewCell.swift in Sources */,
 				FE136A582730260D00E46322 /* AddViewController.swift in Sources */,
 				FE136A4E272F89FC00E46322 /* LocalizableStrings.swift in Sources */,
 				FE136A15272F738400E46322 /* UIFont+Extension.swift in Sources */,
