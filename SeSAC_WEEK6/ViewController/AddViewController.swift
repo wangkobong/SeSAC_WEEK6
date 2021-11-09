@@ -51,14 +51,14 @@ class AddViewController: UIViewController, UITextFieldDelegate, UITextViewDelega
     }
     
     @objc func saveButtonPressed() {
-        let buttonDate = dateButton.currentTitle!
+        let buttonDate = dateButton.currentTitle ?? "\(Date())"
         let format = DateFormatter()
         format.dateFormat = "yyyy년 MM월 dd일"
-//        let date = dateButton.currentTitle!
-//        let value = format.date(from: buttonDate)
-//
-        // let value = DateFormatter.customFormat.date(from: date)
-        guard let date = dateButton.currentTitle, let value = format.date(from: date) else { return }
+        let date = dateButton.currentTitle!
+        guard let value = format.date(from: buttonDate) else { return  }
+
+//         let value = DateFormatter.customFormat.date(from: date)
+//        guard let date = dateButton.currentTitle, let value = format.date(from: date) else { return }
         
         let task = UserDiary(diaryTitle: titleTextField.text!, diaryContent: contentTextView.text!, writeDate: value, registerDate: Date())
         try! localRealm.write {
